@@ -1,6 +1,6 @@
 # Foobar
 
-Foobar is a Python library for dealing with word pluralization.
+jibol is a Python library for dealing with word pluralization.
 
 ## Installation
 
