@@ -68,6 +68,10 @@ body {
     animation: pulse 2s infinite;
 }
 
+.flip {
+    transform: rotateY(180deg);
+}
+
 .profile-pic:hover {
     transform: rotateY(360deg) scale(1.1);
 }
