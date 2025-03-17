@@ -1,36 +1,27 @@
-# Foobar
+# Landing Page
 
-jibollll merupakan sosok yang sangat menyeramkan karena bisa memainkan apa yang sedang dimainkan
+Landing Page ini dirancang untuk memberikan pengalaman terbaik bagi pengguna dengan desain yang responsif dan modern menggunakan HTML dan CSS.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
+Gunakan file HTML dan CSS yang telah disediakan untuk menampilkan halaman ini di browser.
 
 ## Usage
 
-```python
-import foobar
+1. Simpan file berikut dalam satu folder:
+   - `index.html`
+   - `styles.css`
 
-# returns 'words'
-foobar.pluralize('word')
+2. Buka file `index.html` di browser untuk melihat tampilan halaman.
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+3. Jika ingin mengedit tampilan, ubah file `styles.css` sesuai kebutuhan.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
+Pull request dipersilakan. Untuk perubahan besar, silakan buka issue terlebih dahulu
 to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Pastikan untuk menguji perubahan yang dilakukan sebelum mengajukan pull request.
 
 ## License
 
