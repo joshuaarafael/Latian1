@@ -1,6 +1,6 @@
 # Landing Page
 
-Landing Page ini dirancang untuk memberikan pengalaman terbaik bagi pengguna dengan desain yang responsif dan modern menggunakan HTML dan CSS.
+Halaman Page ini dirancang untuk memberikan pengalaman terbaik bagi pengguna dengan desain yang responsif dan modern menggunakan HTML dan CSS.
 
 ## Installation
 
