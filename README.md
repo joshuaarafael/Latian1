@@ -1,6 +1,6 @@
 # Foobar
 
-jib jib jib obol obobl merupakan entitas yang sangat berbahaya karena sangat ganas
+jibollll merupakan sosok yang sangat menyeramkan karena bisa memainkan apa yang sedang dimainkan
 
 ## Installation
 
