@@ -1,6 +1,6 @@
 # Foobar
 
-jibol is a Python library for dealing with word pluralization.
+jib jib jib obol obobl merupakan entitas yang sangat berbahaya karena sangat ganas
 
 ## Installation
 
