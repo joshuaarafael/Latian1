@@ -1,12 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #533483);
+    background-size: 400% 400%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out, bgAnimation 10s infinite alternate;
+    overflow-y: auto;
+    color: #e0e0e0;
 }
 
 @keyframes fadeIn {
@@ -14,81 +17,122 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.biodata-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 400px;
-    transition: transform 0.3s;
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
-.biodata-container:hover {
-    transform: scale(1.05);
+.biodata-container {
+    background: rgba(20, 20, 30, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 90vw;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: bounceIn 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.biodata-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 215, 0, 0.1); /* Emas lembut */
+    border-radius: 50%;
+    animation: moveBubble 6s infinite alternate;
+}
+
+@keyframes moveBubble {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
 }
 
 .profile-pic {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #007BFF;
-    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border: 5px solid #f1c40f;
+    transition: transform 0.4s ease-in-out;
+    animation: pulse 2s infinite;
 }
 
 .profile-pic:hover {
-    transform: rotate(360deg);
+    transform: rotateY(360deg) scale(1.1);
 }
 
 h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #f1c40f;
+    font-size: 28px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
+    animation: slideIn 1.2s ease-in-out;
 }
 
 p, ul {
-    font-size: 18px;
-    color: #444;
-    margin: 8px 0;
-    text-align: left;
-}
-
-ul {
-    padding-left: 20px;
+    font-size: 20px;
+    color: #b0b0b0;
+    margin: 10px 0;
+    text-align: center;
 }
 
 hr {
     border: none;
-    height: 2px;
-    background: #007BFF;
+    height: 3px;
+    background: linear-gradient(to right, #f1c40f, #e74c3c);
     margin: 15px 0;
+    width: 80%;
 }
 
 h3 {
-    color: #007BFF;
-    margin-top: 15px;
+    color: #f1c40f;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 .social-links {
     margin-top: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-links a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    margin: 0 8px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    background: #007BFF;
-    transition: background 0.3s, transform 0.2s;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f1c40f, #e74c3c);
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    animation: popUp 1.5s ease-in-out;
 }
 
 .social-links a:hover {
-    background: #0056b3;
-    transform: scale(1.1);
+    background: linear-gradient(45deg, #e74c3c, #f1c40f);
+    transform: scale(1.15) rotate(-5deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
